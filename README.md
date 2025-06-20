@@ -80,7 +80,7 @@ Prova da propriedade 1:
 Prova da propriedade 2:
 <pre>
   Prova por contradição:
-    1. Se existe a solução B' para _T<sub>1</sub>_ tal que |B'| > |A'|, então seja B = B' ∪ {_t<sub>1</sub>_} (isso pode ser feito pois _t<sub>1</sub>_ termina antes que todas as tarefas de B' e assim é compatível com elas)
+    1. Se existe a solução B' para T<sub>1</sub> tal que |B'| > |A'|, então seja B = B' ∪ {t<sub>1</sub>} (isso pode ser feito pois t<sub>1</sub> termina antes que todas as tarefas de B' e assim é compatível com elas)
     2. Logo |B| > |A|, o que contradiz que A é uma solução ótima
 </pre>
 
