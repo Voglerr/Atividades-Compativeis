@@ -40,11 +40,11 @@ Com essa abordagem será escolhido apenas a tarefa _t<sub>1</sub>_, por ser a qu
 Existe uma outra forma de resolver esse problema de forma gulosa, que é escolher sempre a tarefa que termina primeiro, ou seja, escolher a de menor _f<sub>i</sub>_ (que seja compatível com as tarefas já escolhidas). Essa abordagem retorna sempre a solução ótima, seja qual for o conjunto de tarefas dado.
 
 ### Algoritmo
-// T: conjunto de tarefas\
-// s: conjunto de tempos de início\
-// f: Conjunto de tempos de término\
-// n: número de tarefas\
 <pre>
+// T: conjunto de tarefas
+// s: conjunto de tempos de início
+// f: Conjunto de tempos de término
+// n: número de tarefas
 Solucao(T, s, f, n)
   1. Ordene as tarefas em ordem crescente de tempo final, de modo que f<sub>1</sub> <= f<sub>2</sub> <= ... <= f<sub>n</sub>
   2. S = {t<sub>1</sub>}
@@ -60,8 +60,6 @@ Este algoritmo está correto, pois no loop da linha 4 sempre adicionamos tarefas
 
 ### Ele é ótimo?
 Sim, trata-se de uma abordagem que sempre retorna uma solução ótima, e é isso que se busca demonstrar nessa seção:
-
-Para qualquer _t<sub>k</sub>_, seja _T<sub>k</sub>_ = {_t<sub>i</sub>_ ∈ _T_  : _s<sub>i</sub>_ ≥ _f<sub>k</sub>_}, isto é, o conjunto de todas as tarefas que começam depois de _t<sub>k</sub>_ terminar. Seja _t<sub>x</sub>_ a tarefa que termina primeiro em _T<sub>k</sub>_, sendo que essa tarefa seria a primeira escolha de Solucao(_T<sub>k</sub>_, _s_, _f_, _n_).
 
 Sendo _T_ uma lista de tarefas ordenadas de forma crescente pelo tempo de término de cada tarefa. A demonstração é baseada em duas propriedades:
 1. Existe uma solução ótima para _T_ que contém a escolha gulosa _t<sub>1</sub>_
