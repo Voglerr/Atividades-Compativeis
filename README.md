@@ -1,6 +1,6 @@
 # Atividades-Compativeis
 ## Introdução
-Em "Introdução aos Algoritmos" (CLRS), algoritmos guloso é definido como um algoritmo que "sempre faz a escolha que parece ser a melhor no momento em questão. Isto é, faz uma escolha localmente ótima, na esperança de que essa escolha leve a uma solução globalmente ótima". Por conta dessa abordagem, o algoritmo guloso não é capaz de garantir soluções ótimas para vários problemas computacionais; essa abordagem da "melhor solução localmente" acaba levando frequentemente a soluções inferiores que a melhor solução possível para o problema geral.
+Em "Introdução aos Algoritmos" (CLRS), algoritmo guloso é definido como um algoritmo que "sempre faz a escolha que parece ser a melhor no momento em questão. Isto é, faz uma escolha localmente ótima, na esperança de que essa escolha leve a uma solução globalmente ótima". Por conta dessa abordagem, o algoritmo guloso não é capaz de garantir soluções ótimas para vários problemas computacionais; essa abordagem da "melhor solução localmente" acaba levando frequentemente a soluções inferiores que a melhor solução possível para o problema geral.
 
 Uma exceção a isso é o problema das atividades compatíveis, que a solução gulosa não só produz soluções ótimas como também é uma solução eficiente, com complexidade Θ(Nlog N). Aqui será abordado três abordagens gulosas possíveis para a solução desse problema e qual delas é uma boa solução, seu algoritmo e uma implementação em código, e também uma demonstração de que essa abordagem retorna soluções ótimas.
 
@@ -63,7 +63,7 @@ Sim, trata-se de uma abordagem que sempre retorna uma solução ótima, e é iss
 
 Sendo _T_ uma lista de tarefas ordenadas de forma crescente pelo tempo de término de cada tarefa. A demonstração é baseada em duas propriedades:
 1. Existe uma solução ótima para _T_ que contém a escolha gulosa _t<sub>1</sub>_
-2. Se A for uma solução ótima que contém _t<sub>1</sub>_, então _A'_ = _A_ - {_t<sub>1</sub>_} é uma solução ótima para _T<sub>1</sub>_ = {_T<sub>i</sub>_ ∈ _T_, _s<sub>i</sub>_ ≥ _f<sub>1</sub>_}
+2. Se A for uma solução ótima que contém _t<sub>1</sub>_, então _A'_ = _A_ - {_t<sub>1</sub>_} é uma solução ótima para _T<sub>1</sub>_ = {_t<sub>i</sub>_ ∈ _T_, _s<sub>i</sub>_ ≥ _f<sub>1</sub>_}
 
 Prova da propriedade 1:
 <pre>
@@ -85,7 +85,7 @@ Prova da propriedade 2:
 </pre>
 
 Logo: 
-- Após cada escolha é feita, resta uma subproblema da mesma forma que o original
-- Por indução, fazer a escolha gulosa a cada passo produz uma solução ótima
+- Após cada escolha é feita, resta um subproblema da mesma forma que o original
+- Por indução, fazer a escolha gulosa a cada passo produz sempre uma solução ótima
   
 Temos que a abordagem gulosa produz uma solução ótima para todo conjunto de tarefas.
