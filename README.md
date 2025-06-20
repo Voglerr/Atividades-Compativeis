@@ -63,7 +63,7 @@ Sim, trata-se de uma abordagem que sempre retorna uma solução ótima, e é iss
 
 Sendo _T_ uma lista de tarefas ordenadas de forma crescente pelo tempo de término de cada tarefa. A demonstração é baseada em duas propriedades:
 1. Existe uma solução ótima para _T_ que contém a escolha gulosa _t<sub>1</sub>_
-2. Se A for uma solução ótima que contém _t<sub>1</sub>_, então _A'_ = _A_ - {_t<sub>1</sub>_} é uma solução ótima para _T<sub>1</sub>_ = {_i_ ∈ _S_, _s<sub>i</sub>_ ≥ _f<sub>1</sub>_}
+2. Se A for uma solução ótima que contém _t<sub>1</sub>_, então _A'_ = _A_ - {_t<sub>1</sub>_} é uma solução ótima para _T<sub>1</sub>_ = {_T<sub>i</sub>_ ∈ _T_, _s<sub>i</sub>_ ≥ _f<sub>1</sub>_}
 
 Prova da propriedade 1:
 <pre>
